@@ -22,17 +22,17 @@ show an 85.6% accuracy in the classification of anomalies in EEG signals.
   - [Requirement](#requirement)
   - [Conceptual framework](#conceptual-framework)
   - [Current situation](#current-situation)
-- Main paradigms
-- Methodology
-  - Data treatment
-  - Implementation
-  - Threshold Selection
-  - Network optimization
-  - Evaluation
-- Results and comparison
-- Conclusions
-- Exhibit
-  - Used tools
+- [Main paradigms](#main-paradigms)
+- [Methodology](#methodology)
+  - [Data treatment](#data-treatment)
+  - [Implementation](#implementation)
+  - [Threshold Selection](#threshold-selection)
+  - [Network optimization](#network-optimization)
+  - [Evaluation](#evaluation)
+- [Results and comparison](#results-and-comparison)
+- [Conclusions](#conclusions)
+- [Exhibit](#exhibit)
+  - [Used tools](#used-tools)
 
 ## Summary
 - Anomaly detection: EEG signal analysis
@@ -95,6 +95,7 @@ Epileptic seizures usually last only a few seconds or a few minutes, after which
 
 
 ### Implementation
+---
 - Random parameters
 - Combinations with 3600 samples
 - Train 80% Test 20%
@@ -104,9 +105,11 @@ Epileptic seizures usually last only a few seconds or a few minutes, after which
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/65355690/189506238-b67eabb0-72cf-449e-b294-e102ca290882.png">
 
 ### Threshold Selection 
+---
 <img width="397" alt="image" src="https://user-images.githubusercontent.com/65355690/189506290-a4259823-4ec3-47e1-9bd5-985fa8cdcd9c.png">
 
 ### Network Optimization
+---
 We will attend to the following criteria:
 - Temporary windows of different lengths
 - Internal parameters of the network
@@ -114,6 +117,7 @@ We will attend to the following criteria:
 - Loss function
 
 ### Evaluation
+---
 - KFOLD 5
 
 
@@ -126,4 +130,10 @@ We will attend to the following criteria:
   - Confusion Matrix
 
 
-
+## Results and comparison
+---
+## Conclusions
+---
+## Exhibit
+###Used tools
+---
