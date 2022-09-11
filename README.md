@@ -31,8 +31,7 @@ show an 85.6% accuracy in the classification of anomalies in EEG signals.
   - [Evaluation](#evaluation)
 - [Results and comparison](#results-and-comparison)
 - [Conclusions](#conclusions)
-- [Exhibit](#exhibit)
-  - [Used tools](#used-tools)
+- [Used tools](#used-tools)
 
 ## Summary
 - Anomaly detection: EEG signal analysis
@@ -132,17 +131,61 @@ We will attend to the following criteria:
 
 ## Results and comparison
 ---
+### Tests V1
+![image](https://user-images.githubusercontent.com/65355690/189506905-e1a37c68-6f4c-426f-8aa7-f3a0cb5b0b25.png)
+
+- Combination Lists
+  - LIST LEARNING RATE = [0.01, 0.001, 0.0001]
+  - LIST ENCODING DIM = [2, 7, 64]
+  - LIST SEQL = [2, 5, 10]
+---
+### Tests V2(optimized)
+![image](https://user-images.githubusercontent.com/65355690/189506910-11bca2c2-f53b-43a4-9ed8-107eba4719f5.png)
+
+- Parameters
+  - LEARNING RATE = 0.001
+  - ENCODING DIM = 7
+  - SEQL = [2, 5]
+  - 10,000 Samples and 150 Epochs
+
+
+### Comparison
+Quality Metrics:
+|         Class       |     Precision    |     Recall    |     F1-score    |
+|:-------------------:|:----------------:|:-------------:|:---------------:|
+|      0 (normal)     |        0,86      |      0,87     |       0,86      |
+|      1 (seizure)    |        0,87      |      0,86     |       0,86      |
+|                     |                  |               |                 |
+|       Accuracy      |       0,865      |      0,865    |       0,86      |
+|       Macro avg     |       0,865      |      0,865    |       0,86      |
+|     Weighted avg    |       0,865      |      0,865    |       0,86      |
+
+---
+Past Work:
+|         Models       |     Precision    |
+|:--------------------:|:----------------:|
+|          LSTM        |       98,50%     |
+|     Random Forest    |       97,08%     |
+|          SVM         |       97,05%     |
+|          CNN         |       96,34%     |
+|          KNN         |       95,23%     |
+|          SGD         |       81,92%     |
+---
+Boxplot:
+
+![image](https://user-images.githubusercontent.com/65355690/189506974-cef2be9d-6a21-4ad8-8a89-72409cf0985f.png)
+
+---
+Confusion Matrix:
+
+![image](https://user-images.githubusercontent.com/65355690/189506976-072f2be0-29f4-4dd6-8c84-7415f59b46ff.png)
 
 ## Conclusions
----
 - Positive Results -> Close to 90% accuracy
 - Autoencoder as classifier -> One-class training
 - Deep learning knowledge -> Refinement within the framework of deep learning
 
-
-## Exhibit
-### Used tools
----
+## Used tools
 - Language: Python
 - Libraries: Pytorch, Numpy, Sklearn, Skimage
 - Software: Spyder, Jupyter Notebook, Google Colab
