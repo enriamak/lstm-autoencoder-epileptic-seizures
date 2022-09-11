@@ -132,8 +132,18 @@ We will attend to the following criteria:
 
 ## Results and comparison
 ---
+
 ## Conclusions
 ---
+- Positive Results -> Close to 90% accuracy
+- Autoencoder as classifier -> One-class training
+- Deep learning knowledge -> Refinement within the framework of deep learning
+
+
 ## Exhibit
-###Used tools
+### Used tools
 ---
+- Language: Python
+- Libraries: Pytorch, Numpy, Sklearn, Skimage
+- Software: Spyder, Jupyter Notebook, Google Colab
+- Hardware: Ryzen 5 2600x CPU, Azure GPU Virtual Machine, Google Colab TPU
