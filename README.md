@@ -1,5 +1,8 @@
 # Anomaly Detection of Epileptic Seizures with Autoencoders
 
+<p align="center">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/65355690/199611545-82bc8503-704e-4cba-ba07-adbce08f65b9.png">
+</p>
 
 ## Description
 In this work, it is proposed to carry out machine learning for the detection of anomalies in cases
